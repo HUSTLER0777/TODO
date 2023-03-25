@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="TD.css" target="#">
 </head>
+
 <body>
     <nav id="navbar">
-       <h1>MY TO DO LIST</h1>
+        <h1>MY TO DO LIST</h1>
     </nav>
     <section id="taskarea">
-        <label for="task">Task:</label>
-        <input type="text" name="Task" id="Task" placeholder="Enter your task here...">
-    <button class="btn">Add task</button>
+        <label  for="task">Task:</label>
+        <input  type="text" name="Task" id="Task" placeholder="Enter your task here...">
+        <button onclick="addBtn()" class="btn">Add task</button>
+        <span id="err"></span>
 
     </section>
-    <ul id="myUL">
-        <li>Hit the gym</li>
-        <li class="checked">Pay bills</li>
-        <li>Meet Brother</li>
-        <li>Buy eggs</li>
-        <li>Organize office</li>
-      </ul>
+
+    <div id="box">
+        <ul id="myUL">
+        </ul>
+    </div>
+
+
 </body>
+<script src="TD.js"></script>
 </html>
